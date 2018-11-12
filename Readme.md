@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Мими Закирова](https://up.htmlacademy.ru/htmlcss/23/user/776469).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Ясель](https://htmlacademy.ru/profile/yasel).
 
 ---
 
