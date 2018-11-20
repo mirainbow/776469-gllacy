@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+</head>
 
-  </body>
+<body>
+  <header class="main-header">
+    <div class=“img-wrapper”>
+      <img src="." alt="логотип Gllacy shop">
+    </div>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li class="site-navigation-item">Каталог</li>
+        <li class="site-navigation-item"><a href="delivery.html">Доставка и оплата</a></li>
+        <li class="site-navigation-item"><a href="about-company.html">О компании</a></li>
+      </ul>
+    </nav>
+    <div class="user-actions-container">
+      <ul class="user-actions">
+        <li>Поиск</li><!--  тут должна быть форма и лупа в background?-->
+        <li>Вход</li>
+        <li>Корзина</li>
+      </ul>
+    </div>
+  </header>
+  <main class="container">
+    <h1 class="hidden">Магазин Glassy</h1>
+    <section class="advantages">
+      <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+      <ul class="advantages-list">
+        <li class="advantage-item">
+          <p>
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+          </p>
+        </li>
+        <li class="advantage-item">
+          <p>
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+          </p>
+        </li>
+        <li class="advantage-item">
+          <p>
+            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+          </p>
+        </li>
+        <li class="advantage-item">
+          <p>
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+          </p>
+        </li>
+      </ul>
+    </section>
+    <article class="news">
+      <a href="news">
+        <h3 class="news-heading">Новое в нашем блоге</h3>
+        <p>10 способов сервировки
+          фруктовых щербетов к
+          столу</p>
+      </a>
+    </article>
+
+    <section class="subscription">
+      <p>
+        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+      </p>
+      <!--здесь будет форма-->
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Твиттер</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+      </ul>
+    </div>
+    <section class="more-info">
+      <ul>
+        <li><a href="#">Для поставщиков</a></li>
+        <li><a href="#">О производстве</a></li>
+        <li><a href="#">Наши документы</a></li>
+        <li><a href="#">Экологические стандарты</a></li>
+      </ul>
+    </section>
+    <p class="footer-copyright-container">
+      <span class="footer-copyright">Сделано в</span>
+      <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      <span class="footer-copyright">2017</span>
+    </p>
+  </footer>
+</body>
+
 </html>
