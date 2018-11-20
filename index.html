@@ -8,23 +8,23 @@
 
 <body>
   <header class="main-header">
+    <a class="main-header-logo">
+      <img src="." alt="логотип Gllacy shop">
+    </a>
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="." alt="логотип Gllacy shop">
-      </a>
       <ul class="site-navigation">
         <li class="site-navigation-item">Каталог</li>
         <li class="site-navigation-item"><a href="delivery.html">Доставка и оплата</a></li>
         <li class="site-navigation-item"><a href="about-company.html">О компании</a></li>
       </ul>
-      <div class="left-header">
-        <ul class="user-navigation">
-          <li>Поиск</li><!--  тут должна быть форма и лупа в background?-->
-          <li>Вход</li>
-          <li>Корзина</li>
-        </ul>
-      </div>
     </nav>
+    <div class="user-actions-container">
+      <ul class="user-actions">
+        <li>Поиск</li><!--  тут должна быть форма и лупа в background?-->
+        <li>Вход</li>
+        <li>Корзина</li>
+      </ul>
+    </div>
   </header>
   <main class="container">
     <h1 class="hidden">Магазин Glassy</h1>
@@ -86,9 +86,11 @@
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
     </section>
-    <span class="footer-copyright">Сделано в</span>
-    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-    <span class="footer-copyright">2017</span>
+    <p class="footer-copyright-container">
+      <span class="footer-copyright">Сделано в</span>
+      <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      <span class="footer-copyright">2017</span>
+    </p>
   </footer>
 </body>
 
