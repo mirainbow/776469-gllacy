@@ -27,27 +27,43 @@
     </div>
   </header>
   <main class="container">
-    <h1 class="hidden">Магазин Glassy</h1>
+    <h1 class="visually-hidden">Магазин Glassy</h1>
     <section class="promo-container">
-      <h2 class="hidden">Акции</h2>
+      <h2 class="visually-hidden">Акции</h2>
       <section class="promo-carousel">
-        <p>Крем-брюле и пломбир с малиновым джемом</p>
-        <button class="button">Давайте оба</button>
+        <ul>
+          <li>
+            <p>Крем-брюле и пломбир с малиновым джемом</p>
+            <button class="button">Давайте оба</button>
+          </li>
+          <li class="visually-hidden">
+            <p>Крем-брюле и пломбир с малиновым джемом</p>
+            <button class="button">Давайте оба</button>
+          </li>
+          <li class="visually-hidden">
+            <p>Крем-брюле и пломбир с малиновым джемом</p>
+            <button class="button">Давайте оба</button>
+          </li>
+        </ul>
+        <div class="carousel-switch-container">
+          <input class="carousel-item" type="radio" name="carousel-switch" value="1">
+          <input class="carousel-item" type="radio" name="carousel-switch" value="2">
+          <input class="carousel-item" type="radio" name="carousel-switch" value="3">
+        </div>
       </section>
-      <div class="promo-item">
+      <div class="promo-item raspberries">
         <h3>Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
         <button class="button">Хочу варенье!</button>
       </div>
-      <div class="promo-item">
+      <div class="promo-item chocolate">
         <h3>Шоколадки даром!</h3>
-        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-          <button class="button">Хочу шоколадки!</button>
-        </p>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно. </p>
+        <button class="button">Хочу шоколадки!</button>
       </div>
     </section>
     <section class="bestseller">
-      <h2 class="hidden">Хиты</h2>
+      <h2 class="visually-hidden">Хиты</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <img src="img/ice-cream/1-1.jpg" width="267" height="267" alt="картинка сливочного мороженого">
@@ -116,8 +132,15 @@
       <!--здесь будет форма-->
     </section>
     <section class="map">
-      <h2 class="hidden">Как нас найти</h2>
-      <img src="img/mapwithpin.png" alt="Карта местоположения" width="1200" height="430">
+      <h2 class="visually-hidden">Как нас найти</h2>
+      <div class="contact-info">
+        <p>Адрес главного офиса и офлайн-магазина:</p>
+        <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+        <p>Для заказов по телефону:</p>
+        <strong>8 812 450-25-25</strong>
+        <p>(с 10 до 20 ежедневно)</p>
+      </div>
+      <img src="img/mapwithpin.png" alt=" Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
     </section>
   </main>
   <footer class="main-footer">
