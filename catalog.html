@@ -13,18 +13,31 @@
     </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li class="site-navigation-item current"><a href="">Каталог</a></li><!--Здесь сделать просто ссылку?-->
+        <li class="site-navigation-item current"><a href="">Каталог</a></li>
+        <!--Здесь сделать просто ссылку?-->
         <li class="site-navigation-item"><a href="delivery.html">Доставка и оплата</a></li>
         <li class="site-navigation-item"><a href="about-company.html">О компании</a></li>
       </ul>
     </nav>
-    <div class="left-header">
-      <ul class="user-navigation">
-        <li>
-          <button class="search-line-button">Поиск</button><!-- Эти строки сделала тут просто баттонами, чтобы протыкивались или копипастнуть с главной страницы?-->
+    <div class="user-actions-container">
+      <ul class="user-actions">
+        <li class="search-line-button">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hiden" for="search-line">Поиск</label>
+            <input class="search-line inactive" id="search-line" type="text" placeholder="Что ищем?">
+          </form>
         </li>
         <li>
-          <button class="login-toggle">Вход</button>
+          <button class="login-toggle inactive">Вход</button>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="email">Электронная почта</label>
+            <input class="login-icon-mail" id="email" type="text" placeholder="Электронная почта">
+            <label class="visually-hidden" for="password">Пароль</label>
+            <input class="login-icon-password" id="password" type="password" placeholder="Пароль">
+            <button class="login-button" type="submit" aria-label="Войти">Войти</button>
+            <a class="forgot password" href="">Забыли пароль</a>
+            <a class="registration" href="">Новая регистрация</a>
+          </form>
         </li>
         <li>
           <button class="cart-button">Корзина</button>
