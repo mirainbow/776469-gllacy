@@ -13,25 +13,54 @@
     </div>
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
+        <li class="site-navigation-item">
+          <a href="catalog.html">Каталог</a>
+          <ul class="catalog-menu inactive">
+            <!-- Хотела сделать здесь тег menu, но не стала рисковать-->
+            <li><a class="catalog-menu-item" href="">Новинки</a></li>
+            <li><a class="catalog-menu-item" href="">Сливочное</a></li>
+            <li><a class="catalog-menu-item" href="">Щербеты</a></li>
+            <li><a class="catalog-menu-item" href="">Фруктовый лед</a></li>
+            <li><a class="catalog-menu-item" href="">Мелорин</a></li>
+          </ul>
+        </li>
         <li class="site-navigation-item"><a href="delivery.html">Доставка и оплата</a></li>
         <li class="site-navigation-item"><a href="about-company.html">О компании</a></li>
       </ul>
     </nav>
     <div class="user-actions-container">
       <ul class="user-actions">
-        <li>Поиск</li><!--  тут должна быть форма и лупа в background?-->
-        <li>Вход</li>
-        <li>Корзина</li>
+        <li class="search-line-button">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hiden" for="search-line">Поиск</label>
+            <input class="search-line inactive" id="search-line" type="text" placeholder="Что ищем?">
+          </form>
+        </li>
+        <li>
+          <button class="login-toggle inactive">Вход</button>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="email">Электронная почта</label>
+            <input class="login-icon-mail" id="email" type="text" placeholder="Электронная почта">
+            <label class="visually-hidden" for="password">Пароль</label>
+            <input class="login-icon-password" id="password" type="password" placeholder="Пароль">
+            <button class="login-button" type="submit" aria-label="Войти">Войти</button>
+            <a class="forgot password" href="">Забыли пароль</a>
+            <a class="registration" href="">Новая регистрация</a>
+          </form>
+        </li>
+        <li>
+          <button>Корзина</button>
+        </li>
       </ul>
     </div>
+
   </header>
   <main class="container">
     <h1 class="visually-hidden">Магазин Glassy</h1>
     <section class="promo-container">
       <h2 class="visually-hidden">Акции</h2>
       <section class="promo-carousel">
-        <ul>
+        <ul class="promo-carousel-list">
           <li>
             <p>Крем-брюле и пломбир с малиновым джемом</p>
             <button class="button">Давайте оба</button>
@@ -44,12 +73,16 @@
             <p>Крем-брюле и пломбир с малиновым джемом</p>
             <button class="button">Давайте оба</button>
           </li>
+          <input class="carousel-item visually-hidden" type="radio" id="btn-1" name="carousel-switch" value="1">
+          <input class="carousel-item visually-hidden" type="radio" id="btn-2" name="carousel-switch" value="2">
+          <input class="carousel-item visually-hidden" type="radio" id="btn-3" name="carousel-switch" value="3">
+          <div class="sliders-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
         </ul>
-        <div class="carousel-switch-container">
-          <input class="carousel-item" type="radio" name="carousel-switch" value="1">
-          <input class="carousel-item" type="radio" name="carousel-switch" value="2">
-          <input class="carousel-item" type="radio" name="carousel-switch" value="3">
-        </div>
+
       </section>
       <div class="promo-item raspberries">
         <h3>Малинка даром!</h3>
@@ -85,7 +118,7 @@
         </li>
         <li class="catalog-item">
           <img src="img/ice-cream/1-4.jpg" width="267" height="267" alt="картинка сливочного мороженого">
-          <p class="price">415/<img/1-4.jpgspan class="weight">кг</span></p>
+          <p class="price">415/<span class="weight">кг</span></p>
           <h3>Сливочное крем-брюле с карамельной подливкой</h3>
           <a class="quick-view" href="#">Быстрый просмотр</a>
         </li>
@@ -166,6 +199,18 @@
       <span class="footer-copyright">2017</span>
     </p>
   </footer>
+  <section class="pop-up-feedback">
+    <h2>Мы обязательно вам ответим!</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label class="visually-hidden" for="user-name-feedback">Введите имя</label>
+      <input class="feedback-form" id="user-name-feedback" type="text" placeholder="Каак вас зовут?">
+      <label class="visually-hidden" for="email-feedback">Введите email</label>
+      <input class="feedback-form" id="email-feedback" type="text" placeholder="Ваша почта для ответа?">
+      <label class="visually-hidden" for="user-review">Напишите что-нибудь.</label>
+      <textarea class="review" id="user-review" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+      <button class="pop-up-close" type="button"><img src="img/icons/x-big.svg" width="18" height="17" alt="закрыть окно обратной связи"></button>
+    </form>
+  </section>
 </body>
 
 </html>
