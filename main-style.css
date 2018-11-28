@@ -1,0 +1,183 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  background-color: #849d8f;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 18px;
+  background-color: #849d8f;
+  font-weight: bold;
+}
+
+/*убираю маркеры  списков меню*/
+.site-navigation,
+.user-actions,
+.catalog-menu,
+.cart-items,
+.catalog-list,
+.advantages-list,
+.social-list,
+.footer-menu-list {
+  list-style: none;
+
+}
+
+/*цвет ссылок хедера,футтера,хитов,новостей*/
+.site-navigation a,
+.user-actions a,
+.catalog-list a,
+.social-list a,
+.more-info a,
+.footer-copyright-container a {
+  color: #ffffff;
+}
+
+.contact-info {
+  font-weight: bold;
+  text-align: right;
+
+}
+
+.contact-time {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contact-number {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.promo-item {
+  width: 560px;
+  height: 229px;
+  font-size: 18px;
+  text-align: left;
+
+  border-radius: 15px;
+}
+
+.promo-item-name {
+  font-size: 35px;
+  line-height: 41px;
+
+
+}
+
+.raspberries {
+  /*  указать потом фоновый цвет(фотошоп кончился)*/
+  background-image: url(img/raspberries.jpg);
+  background-repeat: no-repeat;
+}
+
+.chocolate {
+  /*  указать потом фоновый цвет(фотошоп кончился)*/
+  background-image: url(img/chocolate.jpg);
+  background-repeat: no-repeat;
+}
+
+.catalog-list h3 {
+  text-align: center;
+}
+
+.price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+.weight {
+  font-size: 30px;
+}
+
+.site-discription {
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+
+}
+
+.advantages {
+  text-align: left;
+  color: #323232;
+  /*  указать потом фоновый цвет(фотошоп кончился)*/
+  background-image: url(img/waffle.jpg);
+  border-radius: 15px;
+}
+
+.news,
+.subscription {
+  width: 549px;
+  height: 211px;
+  border-radius: 15px;
+
+}
+
+.news {
+  font-size: 24px;
+  line-height: 30px;
+  /*  указать потом фоновый цвет(фотошоп кончился)*/
+  background-image: url(img/strawberry.jpg);
+}
+.news a{
+  color: #323232;
+}
+.news-name{
+/*  text-decoration-line: underline; или бордер*/
+}
+
+.subscription-container {
+  width: 549px;
+  height: 211px;
+  padding: 5px;
+  color: #5a5a5a;
+  background-image: url(img/mail-backgound.jpg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.subscription {
+
+  background-color: #f8f7f4;
+  border-radius: 10px;
+}
+
+.subscription-item {
+  margin-top: 0;
+}
+
+.more-info {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
+
+}
+
+.footer-copyright-container {
+  font-size: 12px;
+}
+.catalog-menu-item{
+  font-size: 14px;
+  line-height: 16px;
+  color:#323232;
+}
+.new-in-catalog{
+  font-weight: bold;
+}
+.catalog-menu-item:hover{
+  background-color: #fbded7;
+}
+.catalog-menu-item:active{
+  background-color: #f6b5a5;
+}
+.link-hover:hover{
+  color: #ffbc9e;
+}
