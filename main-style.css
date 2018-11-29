@@ -127,11 +127,13 @@ a {
   /*  указать потом фоновый цвет(фотошоп кончился)*/
   background-image: url(img/strawberry.jpg);
 }
-.news a{
+
+.news a {
   color: #323232;
 }
-.news-name{
-/*  text-decoration-line: underline; или бордер*/
+
+.news-name {
+  /*  text-decoration-line: underline; или бордер*/
 }
 
 .subscription-container {
@@ -164,20 +166,25 @@ a {
 .footer-copyright-container {
   font-size: 12px;
 }
-.catalog-menu-item{
+
+.catalog-menu-item {
   font-size: 14px;
   line-height: 16px;
-  color:#323232;
+  color: #323232;
 }
-.new-in-catalog{
+
+.new-in-catalog {
   font-weight: bold;
 }
-.catalog-menu-item:hover{
+
+.catalog-menu-item:hover {
   background-color: #fbded7;
 }
-.catalog-menu-item:active{
+
+.catalog-menu-item:active {
   background-color: #f6b5a5;
 }
-.link-hover:hover{
+
+.link-hover:hover {
   color: #ffbc9e;
 }
