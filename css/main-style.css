@@ -5,6 +5,9 @@ body {
   font-weight: 400;
   background-color: #849d8f;
   color: #ffffff;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -15,6 +18,7 @@ a {
   line-height: 18px;
   background-color: #849d8f;
   font-weight: bold;
+
 }
 
 /*убираю маркеры  списков меню*/
@@ -24,8 +28,7 @@ a {
 .cart-items,
 .catalog-list,
 .advantages-list,
-.social-list,
-.footer-menu-list {
+.social-list {
   list-style: none;
 
 }
@@ -99,6 +102,7 @@ a {
 }
 
 .site-discription {
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   text-align: left;
@@ -106,26 +110,35 @@ a {
 }
 
 .advantages {
+  width: 1146px;
+  height: 306px;
+  padding: 21px;
   text-align: left;
   color: #323232;
   /*  указать потом фоновый цвет(фотошоп кончился)*/
   background-image: url(../img/waffle.jpg);
   border-radius: 15px;
+  box-sizing: border-box;
+
 }
 
-.news,
 .subscription {
-  width: 549px;
-  height: 211px;
   border-radius: 15px;
 
 }
 
+.half-width {
+  width: 560px;
+}
+
 .news {
+  height: 222px;
+  border-radius: 15px;
   font-size: 24px;
   line-height: 30px;
   /*  указать потом фоновый цвет(фотошоп кончился)*/
   background-image: url(../img/strawberry.jpg);
+  background-repeat: no-repeat;
 }
 
 .news a {
@@ -137,19 +150,20 @@ a {
 }
 
 .subscription-container {
-  width: 549px;
-  height: 211px;
+  height: 220px;
   padding: 5px;
   color: #5a5a5a;
   background-image: url(../img/mail-backgound.jpg);
   background-repeat: no-repeat;
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .subscription {
-
-  background-color: #f8f7f4;
+  width: 549px;
+  height: 211px;
   border-radius: 10px;
+  background-color: #f8f7f4;
 }
 
 .subscription-item {
@@ -160,7 +174,7 @@ a {
   font-size: 13px;
   line-height: 18px;
   font-weight: bold;
-
+  width: 305px;
 }
 
 .footer-copyright-container {
@@ -176,7 +190,8 @@ a {
 .new-in-catalog {
   font-weight: bold;
 }
-.catalog-menu-item{
+
+.catalog-menu-item {
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
@@ -221,8 +236,96 @@ a {
   color: rgb(67, 67, 66);
   background-color: rgb(247, 246, 242);
   box-shadow: inset 0px 2px 1px 0 #696969;
-  
+
 }
-.ice-cream-catalog{
+
+.ice-cream-catalog {
   border-radius: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.grid-section-container {
+  /*контейнер-секции-сетки*/
+  padding: 0 27px;
+}
+
+.main-header-left {
+  display: flex;
+}
+
+.site-navigation {
+  display: flex;
+  padding: 0;
+}
+
+.site-navigation-item {
+  margin-left: 24px;
+}
+
+.user-actions-container {
+  display: flex;
+}
+
+.user-actions {
+  display: flex;
+
+}
+
+.user-actions-item {
+  margin-left: 24px;
+}
+
+.documents-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 220px;
+
+}
+
+.advantage-item {
+  width: 470px;
+  padding-left: 55px;
+}
+
+.advantage-item-text {
+  margin: 0;
+}
+
+.advantage-item:nth-child(1),
+.advantage-item:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.catalog-list {
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.catalog-item {
+  width: 267px;
+
 }
