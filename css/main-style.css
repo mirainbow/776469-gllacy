@@ -28,7 +28,8 @@ a {
 .cart-items,
 .catalog-list,
 .advantages-list,
-.social-list {
+.social-list,
+.breadcrumbs {
   list-style: none;
 
 }
@@ -64,15 +65,22 @@ a {
   height: 229px;
   font-size: 18px;
   text-align: left;
-
+  margin-bottom: 40px;
+  box-sizing: border-box;
   border-radius: 15px;
+  position: relative;
 }
 
 .promo-item-name {
   font-size: 35px;
   line-height: 41px;
+  margin: 0;
 
+}
 
+.promo-item p {
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .raspberries {
@@ -124,10 +132,12 @@ a {
 
 .subscription {
   border-radius: 15px;
+  box-sizing: border-box;
 
 }
 
 .half-width {
+  padding: 20px;
   width: 560px;
 }
 
@@ -139,6 +149,13 @@ a {
   /*  указать потом фоновый цвет(фотошоп кончился)*/
   background-image: url(../img/strawberry.jpg);
   background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.news-heading {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-weight: normal;
 }
 
 .news a {
@@ -146,7 +163,9 @@ a {
 }
 
 .news-name {
-  /*  text-decoration-line: underline; или бордер*/
+  margin: 0;
+  font-weight: bold;
+  text-decoration-line: underline;
 }
 
 .subscription-container {
@@ -168,6 +187,7 @@ a {
 
 .subscription-item {
   margin-top: 0;
+  margin-bottom: 35px;
 }
 
 .more-info {
@@ -241,6 +261,7 @@ a {
 
 .ice-cream-catalog {
   border-radius: 50%;
+
 }
 
 .hidden {
@@ -257,8 +278,8 @@ a {
   overflow: hidden;
 }
 
+/*контейнер-секции-сетки*/
 .grid-section-container {
-  /*контейнер-секции-сетки*/
   padding: 0 27px;
 }
 
@@ -309,10 +330,12 @@ a {
 .advantage-item {
   width: 470px;
   padding-left: 55px;
+
 }
 
 .advantage-item-text {
   margin: 0;
+  /*  background-image: url(../img/)*/
 }
 
 .advantage-item:nth-child(1),
@@ -321,11 +344,143 @@ a {
 }
 
 .catalog-list {
+  margin: 0;
   padding: 0;
   flex-wrap: wrap;
 }
 
 .catalog-item {
-  width: 267px;
+  width: 266px;
+  position: relative;
 
+}
+
+.advantages,
+.news-subscription-container,
+.map {
+  margin-bottom: 40px;
+}
+
+.price {
+  position: absolute;
+  margin: 0;
+  top: 205px;
+}
+
+.catalog-item h3 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.quick-view {
+  display: none;
+}
+
+
+
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.breadcrumbs li::after {
+  content: "»";
+  position: absolute;
+  top: 1px;
+  right: -15px;
+  width: 8px;
+  height: 8px;
+}
+
+.breadcrumbs-current::after {
+  display: none;
+}
+
+.button {
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 50px;
+}
+
+.promo-item .button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  line-height: 24px;
+  font-size: 18px;
+  padding: 14px 23px;
+}
+
+.button:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.subscription-mail {
+  width: 368px;
+  height: 44px;
+  border-radius: 5px;
+  border: 0 none;
+  margin-right: 10px;
+}
+
+.send-mail {
+  height: 44px;
+  padding: 14px 19px;
+
+}
+
+.user-button {
+  display: inline-block;
+  background-color: rgb(155, 175, 163);
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 17px 9px 45px;
+  border-radius: 50px;
+}
+
+.cart-button {
+  background-image: url(../img/icons/basket.svg);
+
+}
+
+.login-toggle {
+  background-image: url(../img/icons/invalid-name.png);
+}
+
+.cart-button,
+.login-toggle {
+  background-repeat: no-repeat;
+  background-position: 16px 7px;
+}
+.search-button{
+  background-image: url(..//img/icons/search-device.svg);
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 33px;
+  border-radius: 100px;
 }

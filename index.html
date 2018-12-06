@@ -52,12 +52,13 @@
         <ul class="user-actions">
           <li class="search-line-button site-navigation-hover user-actions-item">
             <form action="https://echo.htmlacademy.ru" method="post">
-              <label class="visually-hiden" for="search-line">Поиск</label>
+              <button class="search-button user-button site-navigation-hover " for="search-line"></button>
+              <label class="visually-hidden" for="search-line">Поиск</label>
               <input class="search-line inactive hidden" id="search-line" type="text" placeholder="Что ищем?">
             </form>
           </li>
           <li class="user-actions-item">
-            <button class="login-toggle inactive site-navigation-hover">Вход</button>
+            <button class="login-toggle inactive site-navigation-hover user-button">Вход</button>
             <form class="login-form hidden" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="email">Электронная почта</label>
               <input class="login-icon-mail" id="email" type="text" placeholder="Электронная почта">
@@ -69,7 +70,7 @@
             </form>
           </li>
           <li class="user-actions-item">
-            <button class="cart-button site-navigation-hover">Корзина</button>
+            <button class="cart-button site-navigation-hover user-button">Пусто</button>
             <div class="cart-container hidden">
               <ul class="cart-items">
                 <li>
@@ -152,7 +153,7 @@
       <h2 class="visually-hidden">Хиты</h2>
       <ul class="catalog-list flex-container">
         <li class="catalog-item">
-          <img class="ice-cream-catalog" src="img/ice-cream/1-1.jpg" width="267" height="267" alt="картинка сливочного мороженого">
+          <img class="ice-cream-catalog" src="img/ice-cream/1-1.jpg" width="266" height="267" alt="картинка сливочного мороженого">
           <p class="price">310₽/<span class="weight">кг</span></p>
           <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
           <a class="quick-view link-hover" href="#">Быстрый просмотр</a>
@@ -206,21 +207,22 @@
       <article class="news half-width">
         <a class="link-hover">
           <h3 class="news-heading">Новое в нашем блоге</h3>
-          <p class="news-name">10 способов сервировки
-            фруктовых щербетов к
+          <p class="news-name">
+            10 способов сервировки <br>
+            фруктовых щербетов к <br>
             столу</p>
         </a>
       </article>
 
       <section class="subscription-container half-width ">
-        <div class="subscription ">
+        <div class="subscription half-width">
           <p class="subscription-item">
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
           <form action="https://echo.htmlacademy.ru" method="post">
             <label for="subscription-mail" class="visually-hidden">Введите почту для подписки</label>
             <input type="text" id="subscription-mail" class="subscription-mail" placeholder="Электронная почта">
-            <button class="send-mail" aria-label="Отправить электронную почту">Отправить</button>
+            <button class="send-mail button" aria-label="Отправить электронную почту">Отправить</button>
           </form>
         </div>
       </section>
@@ -259,7 +261,7 @@
     <p class="footer-copyright-container">
       <img class="academy-logo" src="img/logo-htmlacademy-small.svg" width="118" height="38" alt="Логотип html academy"><br>
       <span class="footer-copyright">Сделано в</span>
-      <a class="button link-hover " href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="link-hover " href="https://htmlacademy.ru">HTML Academy</a>
       <span class="footer-copyright">2017</span>
     </p>
   </footer>
