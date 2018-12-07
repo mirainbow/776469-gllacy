@@ -3,11 +3,21 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
-  background-color: #849d8f;
   color: #ffffff;
+}
+
+.site-wrapper {
+  min-width: 940px;
+  background-color: #849d8f;
+  transition: background-color 0.5s ease;
+
+}
+
+.site-container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  transition: background-image 0.5s ease;
 }
 
 a {
@@ -16,7 +26,6 @@ a {
 
 .main-navigation {
   line-height: 18px;
-  background-color: #849d8f;
   font-weight: bold;
 
 }
@@ -233,7 +242,7 @@ a {
 
 
 .catalog-item:hover {
-  background-color: rgb(155, 175, 163);
+  background-color: rgb(255, 255, 255, 0.2);
 
 }
 
@@ -353,6 +362,8 @@ a {
   width: 266px;
   position: relative;
 
+
+
 }
 
 .advantages,
@@ -453,13 +464,11 @@ a {
 
 .user-button {
   display: inline-block;
-  background-color: rgb(155, 175, 163);
+  background-color: rgb(255, 255, 255, 0.2);
   color: #ffffff;
   text-align: center;
   border: none;
-  font-size: 14px;
-  line-height: 16px;
-  padding: 10px 17px 9px 45px;
+
   border-radius: 50px;
 }
 
@@ -476,11 +485,132 @@ a {
 .login-toggle {
   background-repeat: no-repeat;
   background-position: 16px 7px;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 10px 17px 9px 45px;
 }
-.search-button{
+
+.search-button {
   background-image: url(..//img/icons/search-device.svg);
   background-repeat: no-repeat;
   width: 33px;
   height: 33px;
   border-radius: 100px;
+  background-position: 10px;
+}
+
+.site-container {
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-width: 940px;
+}
+
+.promo-carousel {
+  position: relative;
+  padding-top: 321px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.carousel-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-title {
+  width: 675px;
+  font-weight: bold;
+  line-height: 60px;
+  font-size: 60px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.slide-button {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 44px;
+  padding: 15px 40px;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  vertical-align: top;
+  /*  background-color: transparent;*/
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+
+.slide {
+  display: none;
+}
+
+#btn-1:checked ~ .site-wrapper #slide1,
+#btn-2:checked ~ .site-wrapper #slide2,
+#btn-3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+  background-color: #ffffff;
+}
+
+#btn-1:checked ~ .site-wrapper .site-container {
+  background-image: url(../img/ice-cream/1layer.png);
+
+}
+
+#btn-2:checked ~ .site-wrapper .site-container {
+  background-image: url(../img/ice-cream/2layer.png);
+
+
+}
+
+#btn-3:checked ~ .site-wrapper .site-container {
+  background-image: url(../img/ice-cream/3%20layer.png);
+
+}
+
+#btn-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+}
+
+#btn-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+}
+
+#btn-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+}
+
+.site-container::before,
+.site-container::after {
+  content: "";
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url(../img/ice-cream/2layer.png);
+}
+
+.site-wrapper::after {
+  background-image: url(../img/ice-cream/3layer.png);
 }
