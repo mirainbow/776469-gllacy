@@ -22,31 +22,32 @@
           </div>
           <nav class="main-navigation">
             <ul class="site-navigation">
-              <li class="site-navigation-item">
-                <a class="site-navigation-hover main-navigation-link" href="catalog.html">Каталог</a>
-                <ul class="catalog-menu hidden">
-                  <li>
+              <li class="site-navigation-item site-navigation-hover">
+                <a class="main-navigation-link" href="catalog.html">Каталог</a>
+                <ul class="catalog-menu">
+                  <li class="catalog-menu-line">
                     <a class="catalog-menu-item new-in-catalog" href="">Новинки</a>
                   </li>
-                  <li>
+                  <hr class="divider">
+                  <li class="catalog-menu-line">
                     <a class="catalog-menu-item link-hover-nav" href="">Сливочное</a>
                   </li>
-                  <li>
+                  <li class="catalog-menu-line">
                     <a class="catalog-menu-item link-hover-nav" href="">Щербеты</a>
                   </li>
-                  <li>
+                  <li class="catalog-menu-line">
                     <a class="catalog-menu-item link-hover-nav" href="">Фруктовый лед</a>
                   </li>
-                  <li>
+                  <li class="catalog-menu-line">
                     <a class="catalog-menu-item link-hover-nav" href="">Мелорин</a>
                   </li>
                 </ul>
               </li>
-              <li class="site-navigation-item ">
-                <a class="site-navigation-hover main-navigation-link" href="delivery.html">Доставка и оплата</a>
+              <li class="site-navigation-item site-navigation-hover">
+                <a class="main-navigation-link" href="delivery.html">Доставка и оплата</a>
               </li>
-              <li class="site-navigation-item ">
-                <a class="site-navigation-hover main-navigation-link" href="about-company.html">О компании</a>
+              <li class="site-navigation-item site-navigation-hover">
+                <a class="main-navigation-link" href="about-company.html">О компании</a>
               </li>
             </ul>
           </nav>
@@ -55,14 +56,14 @@
           <div class="user-actions-container">
             <ul class="user-actions">
               <li class="search-line-button site-navigation-hover user-actions-item">
+                <button class="search-button user-button site-navigation-hover " for="search-line"></button>
                 <form action="https://echo.htmlacademy.ru" method="post">
-                  <button class="search-button user-button site-navigation-hover " for="search-line"></button>
                   <label class="visually-hidden" for="search-line">Поиск</label>
-                  <input class="search-line inactive hidden" id="search-line" type="text" placeholder="Что ищем?">
+                  <input class="search-line inactive" id="search-line" type="text" placeholder="Что ищем?">
                 </form>
               </li>
-              <li class="user-actions-item">
-                <button class="login-toggle inactive site-navigation-hover user-button">Вход</button>
+              <li class="user-actions-item site-navigation-hover">
+                <button class="login-toggle inactive  user-button">Вход</button>
                 <form class="login-form hidden" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="email">Электронная почта</label>
                   <input class="login-icon-mail" id="email" type="text" placeholder="Электронная почта">
@@ -73,8 +74,8 @@
                   <a class="registration" href="">Новая регистрация</a>
                 </form>
               </li>
-              <li class="user-actions-item">
-                <button class="cart-button site-navigation-hover user-button">Пусто</button>
+              <li class="user-actions-item site-navigation-hover">
+                <button class="cart-button  user-button">Пусто</button>
                 <div class="cart-container hidden">
                   <ul class="cart-items">
                     <li>
