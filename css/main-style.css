@@ -210,29 +210,21 @@ a {
   font-size: 12px;
 }
 
-.catalog-menu-item {
-  font-size: 14px;
-  line-height: 16px;
-  color: #323232;
-}
 
-.new-in-catalog {
-  font-weight: bold;
-}
 
 .catalog-menu-item {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 30px;
   font-weight: normal;
   color: #323232;
-  background-color: rgb(248, 247, 243);
+  min-height: 28px;
 }
 
-.catalog-menu-item:hover {
+.catalog-menu-line:hover {
   background-color: #fbded7;
 }
 
-.catalog-menu-item:active {
+.catalog-menu-line:active {
   background-color: #f6b5a5;
 }
 
@@ -246,10 +238,17 @@ a {
 
 }
 
-.site-navigation-hover:hover {
-  color: rgb(67, 67, 66);
-  background-color: rgb(247, 246, 242);
 
+.site-navigation-hover:hover {
+
+  background-color: rgb(247, 246, 242);
+  border-radius: 50px;
+  color: rgb(67, 67, 66);
+
+}
+
+.site-navigation-hover:hover a {
+  color: rgb(67, 67, 66);
 }
 
 .site-navigation-hover:active {
@@ -302,7 +301,9 @@ a {
 }
 
 .site-navigation-item {
-  margin-left: 24px;
+  padding: 9px 13px;
+  position: relative;
+
 }
 
 .user-actions-container {
@@ -613,4 +614,51 @@ a {
 
 .site-wrapper::after {
   background-image: url(../img/ice-cream/3layer.png);
+}
+
+.catalog-menu-line {
+  padding: 0 20px;
+  min-height: 28px;
+
+}
+
+.catalog-menu {
+  display: none;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px 0;
+  background-color: rgb(248, 247, 243);
+  width: 143px;
+
+}
+
+.divider {
+  padding: 0;
+  margin: 5px 7px;
+  background-color: rgb(208, 209, 206);
+}
+
+.new-in-catalog {
+  font-weight: bold;
+}
+
+.site-navigation-item:hover .catalog-menu {
+  display: block;
+
+}
+
+.active-page {
+  border-radius: 20px;
+}
+.search-line{
+  
+}
+.user-actions:hover .search-line{
+  display: block;
+}
+.catalog-menu-container {
+  position: absolute;
+  top: 30px;
+  left: -10px;
+  padding-top: 15px;
 }
