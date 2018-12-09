@@ -45,7 +45,6 @@ a {
 
 /*цвет ссылок хедера,футтера,хитов,новостей*/
 .main-navigation-link,
-.user-actions a,
 .catalog-list a,
 .social-list a,
 .more-info a,
@@ -247,7 +246,8 @@ a {
 
 }
 
-.site-navigation-hover:hover a {
+.site-navigation-hover:hover > a,
+.site-navigation-hover:hover > button {
   color: rgb(67, 67, 66);
 }
 
@@ -479,6 +479,7 @@ a {
 }
 
 .login-toggle {
+  position: relative;
   background-image: url(../img/icons/invalid-name.png);
 }
 
@@ -623,7 +624,7 @@ a {
 }
 
 .catalog-menu {
-  display: none;
+
   border-radius: 5px;
   overflow: hidden;
   padding: 5px 0;
@@ -632,17 +633,26 @@ a {
 
 }
 
-.divider {
-  padding: 0;
-  margin: 5px 7px;
-  background-color: rgb(208, 209, 206);
+/*ДЛЯ ВЫПАДАЮЩЕГО МЕНЮ*/
+.drop-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
 }
 
 .new-in-catalog {
   font-weight: bold;
+  position: relative;
 }
 
-.site-navigation-item:hover .catalog-menu {
+.catalog-menu-container {
+  top: 30px;
+  left: -10px;
+  padding-top: 15px;
+
+}
+
+.drop-trigger:hover .drop-menu {
   display: block;
 
 }
@@ -650,15 +660,198 @@ a {
 .active-page {
   border-radius: 20px;
 }
-.search-line{
-  
+
+.user-form {
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
-.user-actions:hover .search-line{
-  display: block;
+
+.search-line {
+
+  width: 311px;
+  padding: 15px;
+
 }
-.catalog-menu-container {
+
+.search-form {
+  width: 341px;
+  min-height: 84px;
+  padding: 20px 15px;
+  top: 40px;
+  right: 0;
+
+}
+
+/*СТИЛИ ДЛЯ ПОЛЕЙ ВВОДА*/
+.user-field {
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 24px;
+  box-sizing: border-box;
+  border: 1px solid #d3d3d2;
+  color: #999999;
+}
+
+.search-line-button {
+  position: relative;
+}
+
+.login-form {
+  width: 277px;
+  height: 214px;
+  padding: 20px 18px;
+  top: 56px;
+  right: 273px;
+}
+
+.login-mail-password {
+  width: 241px;
+  height: 44px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 15px;
+
+}
+
+.login-button {
+  width: 100px;
+  height: 44px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.login-button:hover {
+  color: #ffffff;
+}
+
+.forgot-password,
+.registration {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.new-password-user {
+  display: flex;
+  flex-direction: column;
+  margin-top: -4px;
+}
+
+.login-form-actions {
+  display: flex;
+}
+
+.cart-container {
+  width: 539px;
+  min-height: 242px;
+  padding: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f8f7f4;
+
+}
+
+.cart-wrapper {
+  top: 56px;
+  right: 149px;
+}
+
+.cart-items-container {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.cart-ice {
+  border-radius: 20px;
+  margin: 0 9px;
+
+}
+
+.cart-items {
+  padding: 0;
+  position: relative;
+}
+
+.cart-item-weight {
+  margin-left: 30px;
+}
+
+.cart-item-price {
+  margin-right: 27px;
+  color: #999999;
+}
+
+.cart-item-name {
+  display: inline-block;
+  width: 217px;
+  vertical-align: top;
+}
+
+.delete-from-cart {
+  border: 0;
+  background-color: inherit;
+}
+
+.cart-items:after {
+  content: "";
   position: absolute;
-  top: 30px;
-  left: -10px;
-  padding-top: 15px;
+  background-color: #cacac7;
+  left: 8px;
+  right: 8px;
+  height: 1px;
+}
+
+.checkout-button {
+  width: 170px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 10px 14px;
+}
+
+.total-price {
+  color: #323232;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: bold;
+
+}
+
+.total-container {
+  text-align: right;
+}
+
+.bottom-line:after {
+  content: "";
+  position: absolute;
+  background-color: #cacac7;
+  left: 8px;
+  right: 8px;
+  height: 1px;
+  top: 47px;
+}
+
+.cart-button:hover {
+  background-image: url(../img/icons/basket-red.svg);
+  background-size: 21px 20px;
+}
+
+.login-toggle:hover {
+  background-image: url(../img/icons/loginicon1.png);
+  background-size: 21px 19px;
+}
+
+.search-button:hover {
+  background-image: url(../img/icons/lope@3x.png);
+  background-size: 17px;
+}
+
+.user-button:hover {
+  background-repeat: no-repeat;
 }
