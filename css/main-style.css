@@ -722,7 +722,7 @@ a {
   margin-right: 20px;
 }
 
-.user-actions-item:hover .user-button {
+.user-actions-item:hover{
   color: 323232;
 }
 
@@ -850,25 +850,23 @@ a {
   top: 47px;
 }
 
-.cart-button:hover {
+.user-actions-item:hover .cart-button-full{
   background-image: url(../img/icons/basket-red.svg);
   background-size: 21px 20px;
 }
 
-.login-toggle:hover {
+.user-actions-item:hover .login-toggle{
   background-image: url(../img/icons/loginicon1.png);
   background-size: 21px 19px;
+  cursor: pointer;
 }
 
-.search-button:hover,
-.search-button:focus {
+.user-actions-item:hover .search-button{
+  
   background-image: url(../img/icons/lope@3x.png);
   background-size: 17px;
-}
-
-.user-button:hover {
   background-repeat: no-repeat;
-  cursor: pointer;
+  background-position: center;
 }
 
 .pop-up-container {
