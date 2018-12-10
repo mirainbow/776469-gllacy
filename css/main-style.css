@@ -678,8 +678,7 @@ a {
   width: 341px;
   min-height: 84px;
   padding: 20px 15px;
-  top: 40px;
-  right: 0;
+
 
 }
 
@@ -701,8 +700,7 @@ a {
   width: 277px;
   height: 214px;
   padding: 20px 18px;
-  top: 56px;
-  right: 273px;
+
 }
 
 .login-mail-password {
@@ -723,8 +721,8 @@ a {
   margin-right: 20px;
 }
 
-.login-button:hover {
-  color: #ffffff;
+.user-actions-item:hover .user-button {
+  color: 323232;
 }
 
 .forgot-password,
@@ -755,9 +753,23 @@ a {
 
 }
 
+/*чтобы не сворачивалось выпадающее меню*/
 .cart-wrapper {
-  top: 56px;
-  right: 149px;
+  top: 35px;
+  right: 126px;
+  padding: 21px;
+}
+
+.search-form-container {
+  padding: 10px;
+  top: 30px;
+  right: 0;
+}
+
+.login-container {
+  top: 46px;
+  right: 273px;
+  padding: 10px;
 }
 
 .cart-items-container {
@@ -847,11 +859,92 @@ a {
   background-size: 21px 19px;
 }
 
-.search-button:hover {
+.search-button:hover,
+.search-button:focus {
   background-image: url(../img/icons/lope@3x.png);
   background-size: 17px;
 }
 
 .user-button:hover {
   background-repeat: no-repeat;
+}
+
+.pop-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pop-up-feedback {
+  position: relative;
+  width: 478px;
+  height: 443px;
+  padding: 20px 23px;
+  border-radius: 10px;
+  background-color: #f8f7f4;
+  box-sizing: border-box;
+}
+
+.pop-up-feedback h2 {
+
+  margin: 0;
+  margin-bottom: 23px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+
+.feedback-form {
+  display: flex;
+  width: 267px;
+  height: 44px;
+  font-size: 16px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.review {
+  width: 428px;
+  height: 155px;
+  font-size: 16px;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.send-review-button {
+  width: 139px;
+  height: 44px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.review-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pop-up-close {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 15px;
+  right: 15px;
+  background-color: inherit;
+  border: none;
+
+}
+
+/*временно*/
+.pop-up-container {
+  display: none;
+
 }

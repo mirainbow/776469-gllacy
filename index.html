@@ -58,26 +58,30 @@
             <ul class="user-actions">
               <li class="search-line-button site-navigation-hover user-actions-item drop-trigger">
                 <button class="search-button user-button site-navigation-hover " for="search-line"></button>
-                <form class="search-form drop-menu user-form" action="https://echo.htmlacademy.ru" method="post">
-                  <label class="visually-hidden" for="search-line">Поиск</label>
-                  <input class="search-line user-field" id="search-line" type="text" placeholder="Что ищем?">
-                </form>
+                <div class="search-form-container drop-menu">
+                  <form class="search-form user-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="search-line">Поиск</label>
+                    <input class="search-line user-field" id="search-line" type="text" placeholder="Что ищем?">
+                  </form>
+                </div>
               </li>
               <li class="user-actions-item site-navigation-hover drop-trigger">
                 <button class="login-toggle  user-button">Вход</button>
-                <form class="login-form  drop-menu user-form" action="https://echo.htmlacademy.ru" method="post">
-                  <label class="visually-hidden" for="email">Электронная почта</label>
-                  <input class="login-mail-password user-field" id="email" type="text" placeholder="Электронная почта">
-                  <label class="visually-hidden" for="password">Пароль</label>
-                  <input class="login-mail-password user-field" id="password" type="password" placeholder="Пароль">
-                  <div class="login-form-actions">
-                    <button class="login-button button" type="submit" aria-label="Войти">Войти</button>
-                    <div class="new-password-user">
-                      <a class="forgot-password" href="">Забыли пароль</a>
-                      <a class="registration" href="">Новая регистрация</a>
+                <div class="login-container drop-menu ">
+                  <form class="login-form  user-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="visually-hidden" for="email">Электронная почта</label>
+                    <input class="login-mail-password user-field" id="email" type="text" placeholder="Электронная почта">
+                    <label class="visually-hidden" for="password">Пароль</label>
+                    <input class="login-mail-password user-field" id="password" type="password" placeholder="Пароль">
+                    <div class="login-form-actions">
+                      <button class="login-button button" type="submit" aria-label="Войти">Войти</button>
+                      <div class="new-password-user">
+                        <a class="forgot-password" href="">Забыли пароль</a>
+                        <a class="registration" href="">Новая регистрация</a>
+                      </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </li>
               <li class="user-actions-item site-navigation-hover drop-trigger">
                 <button class="cart-button  user-button">Пусто</button>
@@ -250,18 +254,24 @@
           <span class="footer-copyright">2017</span>
         </p>
       </footer>
-      <section class="pop-up-feedback hidden">
-        <h2>Мы обязательно вам ответим!</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden" for="user-name-feedback">Введите имя</label>
-          <input class="feedback-form" id="user-name-feedback" type="text" placeholder="Каак вас зовут?">
-          <label class="visually-hidden" for="email-feedback">Введите email</label>
-          <input class="feedback-form" id="email-feedback" type="text" placeholder="Ваша почта для ответа?">
-          <label class="visually-hidden" for="user-review">Напишите что-нибудь.</label>
-          <textarea class="review" id="user-review" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-          <button class="pop-up-close" type="button"><img src="img/icons/x-big.svg" width="18" height="17" alt="закрыть окно обратной связи"></button>
-        </form>
-      </section>
+      <div class="pop-up-container">
+        <section class="pop-up-feedback">
+          <h2>Мы обязательно вам ответим!</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="user-name-feedback">Введите имя</label>
+            <input class="feedback-form user-field" id="user-name-feedback" type="text" placeholder="Как вас зовут?">
+            <label class="visually-hidden" for="email-feedback">Введите email</label>
+            <input class="feedback-form user-field" id="email-feedback" type="text" placeholder="Ваша почта для ответа?">
+            <label class="visually-hidden" for="user-review">Напишите что-нибудь.</label>
+            <textarea class="review user-field" id="user-review" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+            <div class="review-button-container">
+              <button class="send-review-button button" aria-label="Отправить вопрос">Отправить</button>
+            </div>
+            <button class="pop-up-close" type="button"><img src="img/icons/x-big.svg" width="18" height="17" alt="закрыть окно обратной связи"></button>
+
+          </form>
+        </section>
+      </div>
     </div>
   </div>
 </body>
