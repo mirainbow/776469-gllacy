@@ -722,8 +722,8 @@ a {
   margin-right: 20px;
 }
 
-.user-actions-item:hover{
-  color: 323232;
+.user-actions-item:hover {
+  color: #323232;
 }
 
 .forgot-password,
@@ -850,19 +850,23 @@ a {
   top: 47px;
 }
 
-.user-actions-item:hover .cart-button-full{
+.user-actions-item:hover .cart-button {
+  background-image: url(../img/icons/basket-black.svg);
+  background-size: 21px 20px;
+}
+.user-actions-item:hover .cart-button-full {
   background-image: url(../img/icons/basket-red.svg);
   background-size: 21px 20px;
 }
 
-.user-actions-item:hover .login-toggle{
+.user-actions-item:hover .login-toggle {
   background-image: url(../img/icons/loginicon1.png);
   background-size: 21px 19px;
   cursor: pointer;
 }
 
-.user-actions-item:hover .search-button{
-  
+.user-actions-item:hover .search-button {
+
   background-image: url(../img/icons/lope@3x.png);
   background-size: 17px;
   background-repeat: no-repeat;
