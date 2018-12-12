@@ -243,7 +243,7 @@ a {
   background-color: rgb(247, 246, 242);
   border-radius: 50px;
   color: rgb(67, 67, 66);
-  cursor: pointer;
+  /*  cursor: pointer;*/
 
 }
 
@@ -426,7 +426,7 @@ a {
   background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
-  cursor: pointer;
+  /*  cursor: pointer;*/
   color: #ffffff;
   border-radius: 50px;
 }
@@ -470,7 +470,6 @@ a {
   color: #ffffff;
   text-align: center;
   border: none;
-
   border-radius: 50px;
 }
 
@@ -854,6 +853,7 @@ a {
   background-image: url(../img/icons/basket-black.svg);
   background-size: 21px 20px;
 }
+
 .user-actions-item:hover .cart-button-full {
   background-image: url(../img/icons/basket-red.svg);
   background-size: 21px 20px;
@@ -912,16 +912,42 @@ a {
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 5px;
+  color: #323232;
+  font-weight: bold;
+}
+
+/*стили подсветки формы обратной связи*/
+.feedback-form:hover,
+.review:hover {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.feedback-form:active,
+.review:active {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.feedback-form::placeholder,
+.review::placeholder {
+  font-weight: normal;
 }
 
 .review {
   width: 428px;
   height: 155px;
-  font-size: 16px;
+  font-weight: bold;
+  color: #323232;
   padding: 15px;
   margin-bottom: 25px;
   box-sizing: border-box;
   resize: none;
+}
+
+.review placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  color: #999999;
+
 }
 
 .send-review-button {
@@ -938,12 +964,18 @@ a {
 
 .pop-up-close {
   position: absolute;
+  width: 18px;
+  height: 17px;
   padding: 0;
   margin: 0;
   top: 15px;
   right: 15px;
+  font-size: 0;
+  background-image: url(../img/icons/x-big.svg);
+  background-size: 18px 17px;
   background-color: inherit;
   border: none;
+  cursor: pointer;
 
 }
 
@@ -951,4 +983,49 @@ a {
 .pop-up-container {
   display: none;
 
+}
+
+.site-navigation-hover {
+  cursor: pointer;
+}
+
+.main-navigation-link {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-navigation-item-active a {
+  border-bottom: 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  min-width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.social-button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 23px;
+}
+
+.social-button:hover {
+  opacity: 1;
+
+}
+
+.social-button:active {
+  opacity: 0.7;
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+
+.link-hover::before {
+  background-image: url(../img/heart.svg);
 }
