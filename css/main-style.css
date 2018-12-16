@@ -18,7 +18,10 @@ body {
   padding-top: 9px;
   margin-left: auto;
   margin-right: auto;
-  transition: background-image 0.5s ease;
+  
+}
+.site-container-img{
+  transition: background-image 1s ease;
 }
 
 a {
@@ -625,18 +628,18 @@ a {
   background-color: #ffffff;
 }
 
-#btn-1:checked ~ .site-wrapper .site-container {
+#btn-1:checked ~ .site-wrapper .site-container-img {
   background-image: url(../img/ice-cream/1layer.png);
 
 }
 
-#btn-2:checked ~ .site-wrapper .site-container {
+#btn-2:checked ~ .site-wrapper .site-container-img {
   background-image: url(../img/ice-cream/2layer.png);
 
 
 }
 
-#btn-3:checked ~ .site-wrapper .site-container {
+#btn-3:checked ~ .site-wrapper .site-container-img {
   background-image: url(../img/ice-cream/3%20layer.png);
 
 }
@@ -1114,7 +1117,7 @@ a {
 
 .main-footer {
   align-items: center;
-  padding: 25px;
+  padding: 10px 30px;
 }
 
 .review::placeholder {
@@ -1127,9 +1130,6 @@ a {
 }
 
 .shop-info-container {
-  position: absolute;
-  right: 27px;
-  bottom: 62px;
   width: 302px;
   font-size: 14px;
   line-height: 20px;
@@ -1139,6 +1139,7 @@ a {
   color: #323232;
   border-radius: 20px;
   box-sizing: border-box;
+  z-index: 2;
 }
 
 
@@ -1174,15 +1175,31 @@ a {
 }
 
 .map-img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
   width: 100%;
   height: 430px;
+
 }
 
 .map {
   position: relative;
   height: 430px;
+
 }
 
 .hidden {
   display: none;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.map-container {
+  padding: 55px 20px;
+  box-sizing: border-box;
 }
