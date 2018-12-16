@@ -216,7 +216,7 @@
             </li>
           </ul>
         </section>
-        <div class="news-subscription-container flex-container">
+        <div class="flex-container">
           <article class="news half-width">
             <a class="link-hover" href="#">
               <h3 class="news-heading">Новое в нашем блоге</h3>
@@ -240,65 +240,8 @@
             </div>
           </section>
         </div>
-        <section class="map">
-          <h2 class="visually-hidden">Как нас найти</h2>
-          <div class="contact-info">
-            <p>Адрес главного офиса и офлайн-магазина:</p>
-            <strong>ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
-            <p>Для заказов по телефону:</p>
-            <strong>8 812 450-25-25</strong>
-            <p>(с 10 до 20 ежедневно)</p>
-          </div>
-          <img src="img/mapwithpin.png" alt=" Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="430">
-        </section>
       </main>
-      <footer class="main-footer grid-section-container flex-container">
-        <div class="footer-social">
-          <ul class="social-list">
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Твиттер</span>
-                <img src="img/icons/twitter.svg" alt="логотип твиттер">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-                <img src="img/icons/inst.svg" alt="логотип инстаграм">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-                <img src="img/icons/fb.svg" alt="логотип инстаграм">
-              </a>
-            </li>
-            <li>
-              <a class="social-button" href="#">
-                <span class="visually-hidden">Вконтакте</span>
-                <img src="img/icons/vk.svg" alt="логотип вконтакте ">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <section class="more-info flex-container">
-          <div class="documents-container">
-            <a class="link-hover heart-suppliers" href="#">Для поставщиков</a>
-            <a class="link-hover" href="#">О производстве</a>
-          </div>
-          <div class="documents-container">
-            <a class="link-hover" href="#">Наши документы</a>
-            <a class="link-hover" href="#">Экологические стандарты</a>
-          </div>
-        </section>
-        <p class="footer-copyright-container">
-          <img class="academy-logo" src="img/logo-htmlacademy-small.svg" width="118" height="38" alt="Логотип html academy"><br>
-          <span class="footer-copyright">Сделано в</span>
-          <a class="link-hover" href="https://htmlacademy.ru">HTML Academy</a>
-          <span class="footer-copyright">2017</span>
-        </p>
-      </footer>
-      <div class="pop-up-container">
+      <div class="pop-up-container hidden js-pop-up-feedback">
         <section class="pop-up-feedback">
           <h2>Мы обязательно вам ответим!</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
@@ -311,13 +254,83 @@
             <div class="review-button-container">
               <button class="send-review-button button" aria-label="Отправить вопрос">Отправить</button>
             </div>
-            <button class="pop-up-close" type="button">Закрыть</button>
-
+            <button class="pop-up-close js-popup-close" type="button">Закрыть</button>
           </form>
         </section>
       </div>
     </div>
   </div>
+  <section class="map">
+    <h2 class="visually-hidden">Как нас найти</h2>
+    <div class="shop-info-container">
+      <p class="company-address-name">Адрес главного офиса и офлайн-магазина:</p>
+      <strong class="company-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</strong>
+      <p class="company-address-name">Для заказов по телефону:</p>
+      <strong class="company-phone">8 812 450-25-25</strong>
+      <p class="open-hours">(с 10 до 20 ежедневно)</p>
+      <button type="button" class="button feedback-button js-feedback-button">Форма обратной связи</button>
+    </div>
+    <img class="map-img" src="img/mapwithpin.png" alt=" Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург">
+  </section>
+  <div class="site-wrapper">
+    <footer class="main-footer grid-section-container flex-container">
+      <div class="footer-social">
+        <ul class="social-list">
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Твиттер</span>
+              <img src="img/icons/twitter.svg" alt="логотип твиттер">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <img src="img/icons/inst.svg" alt="логотип инстаграм">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <img src="img/icons/fb.svg" alt="логотип инстаграм">
+            </a>
+          </li>
+          <li>
+            <a class="social-button" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+              <img src="img/icons/vk.svg" alt="логотип вконтакте ">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <section class="more-info flex-container">
+        <div class="documents-container">
+          <a class="link-hover heart-suppliers" href="#">Для поставщиков</a>
+          <a class="link-hover" href="#">О производстве</a>
+        </div>
+        <div class="documents-container">
+          <a class="link-hover" href="#">Наши документы</a>
+          <a class="link-hover" href="#">Экологические стандарты</a>
+        </div>
+      </section>
+      <p class="footer-copyright-container">
+        <img class="academy-logo" src="img/logo-htmlacademy-small.svg" width="118" height="38" alt="Логотип html academy"><br>
+        <span class="footer-copyright">Сделано в</span>
+        <a class="link-hover" href="https://htmlacademy.ru">HTML Academy</a>
+        <span class="footer-copyright">2017</span>
+      </p>
+    </footer>
+  </div>
+  <script>
+    var popup = document.querySelector(".js-pop-up-feedback");
+    document.querySelector(".js-popup-close").addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.add("hidden");
+    })
+    document.querySelector(".js-feedback-button").addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.remove("hidden");
+    })
+  </script>
 </body>
 
 </html>
