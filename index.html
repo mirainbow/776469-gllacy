@@ -14,7 +14,7 @@
   <input class="visually-hidden" type="radio" id="btn-2" name="carousel-switch" value="2">
   <input class="visually-hidden" type="radio" id="btn-3" name="carousel-switch" value="3">
   <div class="site-wrapper">
-    <div class="site-container-img site-container">
+    <div class="site-container site-container-img">
       <header class="main-header grid-section-container flex-container">
         <div class="main-header-left">
           <div class=“img-wrapper”>
@@ -241,14 +241,14 @@
           </section>
         </div>
       </main>
-      <div class="pop-up-container hidden js-pop-up-feedback">
+      <div class="pop-up-container js-pop-up-feedback">
         <section class="pop-up-feedback">
           <h2>Мы обязательно вам ответим!</h2>
           <form action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="user-name-feedback">Введите имя</label>
-            <input class="feedback-form user-field" id="user-name-feedback" type="text" placeholder="Как вас зовут?">
+            <input class="feedback-form user-field" id="user-name-feedback" type="text" name="client" placeholder="Как вас зовут?">
             <label class="visually-hidden" for="email-feedback">Введите email</label>
-            <input class="feedback-form user-field" id="email-feedback" type="text" placeholder="Ваша почта для ответа?">
+            <input class="feedback-form user-field" id="email-feedback" type="text" name="email" placeholder="Ваша почта для ответа?">
             <label class="visually-hidden" for="user-review">Напишите что-нибудь.</label>
             <textarea class="review user-field" id="user-review" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
             <div class="review-button-container">
@@ -326,14 +326,26 @@
   </div>
   <script>
     var popup = document.querySelector(".js-pop-up-feedback");
+    var form = popup.querySelector("form");
+    var email = popup.querySelector("[name=email]");
+    var client = popup.querySelector("[name=client]");
     document.querySelector(".js-popup-close").addEventListener("click", function(evt) {
       evt.preventDefault();
-      popup.classList.add("hidden");
+      popup.classList.remove("active");
     })
     document.querySelector(".js-feedback-button").addEventListener("click", function(evt) {
       evt.preventDefault();
-      popup.classList.remove("hidden");
+      popup.classList.add("active");
+      popup.classList.remove("pop-up-error");
     })
+    form.addEventListener("submit", function(evt) {
+      if (!email.value || !client.value) {
+        evt.preventDefault();
+        popup.classList.remove("pop-up-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("pop-up-error");
+      }
+    });
   </script>
 </body>
 

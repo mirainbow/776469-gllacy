@@ -18,9 +18,10 @@ body {
   padding-top: 9px;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
-.site-container-img{
+
+.site-container-img {
   transition: background-image 1s ease;
 }
 
@@ -928,7 +929,7 @@ a {
 }
 
 .pop-up-container {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -942,6 +943,8 @@ a {
 
 .pop-up-feedback {
   position: relative;
+  top: 100px;
+  left: 35%;
   width: 478px;
   height: 443px;
   padding: 20px 23px;
@@ -1190,8 +1193,13 @@ a {
 
 }
 
-.hidden {
-  display: none;
+.active {
+  display: block;
+
+}
+
+.active .pop-up-feedback {
+  animation: bounce 0.5s;
 }
 
 .flex-right {
@@ -1202,4 +1210,49 @@ a {
 .map-container {
   padding: 55px 20px;
   box-sizing: border-box;
+}
+
+.pop-up-error {
+  animation: shake 0.6s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+ 
+  90% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
