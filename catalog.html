@@ -135,6 +135,81 @@
         </ul>
 
         <h1 class="page-title">Сливочное мороженое</h1>
+        <section class="filters">
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="catalog-filters-container">
+              <p class="filers-label">Сортировка:</p>
+              <select name="select-filter" class="select-catalog-filter" id="select">
+                <option value="popular">по популярности</option>
+                <option value="cheep">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat content">по жирности</option>
+              </select>
+            </div>
+            <div class="catalog-slider catalog-filters-container">
+              <p class="filers-label">Цена: 100 руб. – 500 руб.</p>
+            </div>
+
+            <div class="catalog-filters-container">
+              <p class="filers-label">Жирность:</p>
+              <div class="catalog-filters-item">
+                <label class="radio-item" for="radio-0">
+                  <input class="visually-hidden radio-trigger" type="radio" id="radio-0" name="catalog-filters-radio" value="0">
+                  <span class="fat-content-radio"></span>
+                  <span>0%</span>
+                </label>
+                <label class="radio-item" for="radio-10">
+                  <input class="visually-hidden radio-trigger" type="radio" id="radio-10" name="catalog-filters-radio" checked value="10">
+                  <span class="fat-content-radio"></span>
+                  <span>до 10%</span>
+                </label>
+                <label class="radio-item" for="radio-30">
+                  <input class="visually-hidden radio-trigger" type="radio" id="radio-30" name="catalog-filters-radio" value="30">
+                  <span class="fat-content-radio"></span>
+                  <span>до 30%</span>
+                </label>
+                <label class="radio-item" for="radio-30plus">
+                  <input class="visually-hidden radio-trigger" type="radio" id="radio-30plus" name="catalog-filters-radio" value="30plus">
+                  <span class="fat-content-radio"></span>
+                  <span>выше 30%</span>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="catalog-filters-container checkbox-container">
+              <p class="filers-label">Наполнители:</p>
+              <div class="catalog-filters-item">
+                <label class="catalog-checkbox">
+                  <input type="checkbox" class="visually-hidden checkbox-item" name="checkbox-filter" checked>
+                  <span class="checkbox-indicator"></span>
+                  шоколадные
+                </label>
+                <label class="catalog-checkbox">
+                  <input type="checkbox" class="visually-hidden checkbox-item" name="checkbox-filter" checked>
+                  <span class="checkbox-indicator"></span>
+                  сахарные присыпки
+                </label>
+                <label class="catalog-checkbox">
+                  <input type="checkbox" class="visually-hidden checkbox-item" name="checkbox-filter">
+                  <span class="checkbox-indicator"></span>
+                  фрукты
+                </label>
+                <label class="catalog-checkbox">
+                  <input type="checkbox" class="visually-hidden checkbox-item" name="checkbox-filter">
+                  <span class="checkbox-indicator"></span>
+                  сиропы
+                </label>
+                <label class="catalog-checkbox">
+                  <input type="checkbox" class="visually-hidden checkbox-item" name="checkbox-filter">
+                  <span class="checkbox-indicator"></span>
+                  джемы
+                </label>
+              </div>
+            </div>
+            <button class="filters-button" type="submit">Применить</button>
+          </form>
+        </section>
         <section class="catalog">
           <h2 class="visually-hidden">Список сливочного мороженного</h2>
           <ul class="catalog-list flex-container">
