@@ -139,7 +139,7 @@
           <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="catalog-filters-container">
               <p class="filers-label">Сортировка:</p>
-              <select name="select-filter" class="select-catalog-filter" id="select">
+              <select name="select-filter" class="catalog-filters-item select-filter" id="select">
                 <option value="popular">по популярности</option>
                 <option value="cheep">сначала недорогие</option>
                 <option value="expensive">сначала дорогие</option>
@@ -148,6 +148,14 @@
             </div>
             <div class="catalog-slider catalog-filters-container">
               <p class="filers-label">Цена: 100 руб. – 500 руб.</p>
+              <div class="catalog-filters-item">
+               <div class="filter-track">
+                <div class="filter-bar">
+                  <div class="left-handle"></div>
+                  <div class="right-handle"></div>
+                </div>
+                </div>
+              </div>
             </div>
 
             <div class="catalog-filters-container">
@@ -205,6 +213,7 @@
                   <span class="checkbox-indicator"></span>
                   джемы
                 </label>
+                <div class="govno"></div>
               </div>
             </div>
             <button class="filters-button" type="submit">Применить</button>
