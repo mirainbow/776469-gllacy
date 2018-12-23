@@ -165,9 +165,11 @@ a {
 }
 
 .news-heading {
-  margin-top: 0;
-  margin-bottom: 13px;
+  margin-top: 3px;
+  margin-bottom: 6px;
   font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .news a {
@@ -198,7 +200,7 @@ a {
 }
 
 .subscription-item {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 35px;
 }
 
@@ -347,12 +349,6 @@ a {
 
 }
 
-.advantage-item {
-  width: 476px;
-  padding: 5px 55px;
-
-}
-
 .advantage-item-text {
   margin: 0;
   /*  background-image: url(../img/)*/
@@ -360,7 +356,7 @@ a {
 
 .advantage-item:nth-child(1),
 .advantage-item:nth-child(3) {
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 
 .catalog-list {
@@ -507,11 +503,13 @@ a {
   border-radius: 5px;
   border: 0 none;
   margin-right: 10px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .send-mail {
   height: 44px;
-  padding: 9px 15px;
+  padding: 9px 17px;
 
 }
 
@@ -568,7 +566,7 @@ a {
 
 .carousel-list {
   margin: 0;
-  margin-top: -50px;
+  margin-top: -85px;
   padding: 0;
   list-style: none;
 }
@@ -1094,6 +1092,8 @@ a {
 .advantage-item {
   background-position: top left;
   background-repeat: no-repeat;
+  width: 477px;
+  padding: 9px 37px 5px 52px;
 }
 
 .advantage-item:nth-child(1) {
@@ -1155,7 +1155,8 @@ a {
 }
 
 .company-address-name {
-  margin: 0 0 7px;
+  width: 158px;
+  margin: 0;
 }
 
 .company-phone,
@@ -1209,7 +1210,7 @@ a {
 }
 
 .map-container {
-  padding: 55px 20px;
+  padding: 62px 27px;
   box-sizing: border-box;
 }
 
@@ -1319,7 +1320,7 @@ a {
 }
 
 .filers-label {
-  margin: 0 0 5px 15px;
+  margin: 10px 0 5px 15px;
   font-size: 14px;
   line-height: 16px;
 }
@@ -1453,6 +1454,4 @@ a {
   border: 8px solid #ffffff;
   border-radius: 100%;
   cursor: pointer;
-}
-
 }

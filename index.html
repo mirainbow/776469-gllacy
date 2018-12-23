@@ -346,6 +346,14 @@
         popup.classList.add("pop-up-error");
       }
     });
+    window.addEventListener("keydown", function(evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popup.classList.contains("active")) {
+          popup.classList.remove("active");
+        }
+      }
+    });
   </script>
 </body>
 
