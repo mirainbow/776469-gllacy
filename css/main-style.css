@@ -39,7 +39,8 @@ a {
 .catalog-list,
 .advantages-list,
 .social-list,
-.breadcrumbs {
+.breadcrumbs,
+.pages-list {
   list-style: none;
 
 }
@@ -50,13 +51,17 @@ a {
 .social-list a,
 .more-info a,
 .footer-copyright-container a,
-.breadcrumbs a {
+.breadcrumbs a,
+.page a {
   color: #ffffff;
 }
 
 .contact-info {
+  position: absolute;
+  right: 26px;
   font-weight: bold;
   text-align: right;
+
 
 }
 
@@ -74,19 +79,20 @@ a {
 
 .promo-item {
   width: 560px;
-  height: 229px;
+  min-height: 229px;
   font-size: 18px;
   text-align: left;
   margin-bottom: 40px;
   box-sizing: border-box;
   border-radius: 15px;
   position: relative;
+  background-size: cover;
 }
 
 .promo-item-name {
   font-size: 35px;
   line-height: 41px;
-  margin: 0;
+  margin: -4px 0px 15px -2px;
 
 }
 
@@ -111,18 +117,13 @@ a {
   text-align: center;
 }
 
-.price {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: bold;
-}
-
 .weight {
   font-size: 30px;
 }
 
 .site-discription {
   margin: 0;
+  font-weight: 500;
   font-size: 24px;
   line-height: 30px;
   text-align: left;
@@ -132,7 +133,7 @@ a {
 .advantages {
   width: 1146px;
   height: 306px;
-  padding: 21px;
+  padding: 25px 21px;
   text-align: left;
   color: #323232;
   /*  указать потом фоновый цвет(фотошоп кончился)*/
@@ -166,7 +167,7 @@ a {
 
 .news-heading {
   margin-top: 3px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
@@ -177,6 +178,7 @@ a {
 }
 
 .news-name {
+  width: 281px;
   margin: 0;
   font-weight: bold;
   text-decoration-line: underline;
@@ -200,7 +202,7 @@ a {
 }
 
 .subscription-item {
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 35px;
 }
 
@@ -209,11 +211,21 @@ a {
   line-height: 18px;
   font-weight: normal;
   width: 305px;
+  margin: 16px 0 0 4px;
 }
 
 .footer-copyright-container {
+  width: 189px;
   font-size: 12px;
   margin: 0;
+}
+
+.academy-logo {
+  width: 100%;
+  margin: 2px 0 0 -40px;
+}
+.academy-logo-catalog{
+  margin: 8px 0 0 -40px;
 }
 
 .catalog-menu-item {
@@ -241,8 +253,6 @@ a {
   background-color: rgb(247, 246, 242);
   border-radius: 50px;
   color: rgb(67, 67, 66);
-
-
 }
 
 .site-navigation-hover:hover > a,
@@ -260,16 +270,17 @@ a {
 }
 
 .site-navigation-item-active:active {
-  color: rgb(67, 67, 66);
-  background-color: rgb(247, 246, 242);
   box-shadow: inset 0px 2px 1px 0 #696969;
-
 }
 
 .ice-cream-catalog {
   border-radius: 50%;
   margin-bottom: 5px;
   position: relative;
+}
+
+.bestseller {
+  margin-bottom: 5px;
 }
 
 .bestseller-product:before {
@@ -321,12 +332,12 @@ a {
 
 .user-actions {
   display: flex;
-  margin: 13px;
+  margin: 13px 0;
 
 }
 
 .user-actions-item {
-  margin-left: 24px;
+  margin-left: 8px;
 }
 
 .documents-container {
@@ -345,6 +356,7 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   height: 220px;
+  margin-top: 8px;
   padding: 0;
 
 }
@@ -360,15 +372,21 @@ a {
 }
 
 .catalog-list {
-  margin: 0;
+  margin: -3px -8px 0;
   padding: 0;
   flex-wrap: wrap;
   box-sizing: border-box;
+  justify-content: flex-start;
 }
 
 .catalog-item {
   width: 285px;
   position: relative;
+  margin-right: 7px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-item-container {
@@ -392,7 +410,7 @@ a {
 }
 
 .catalog-item-wrapper:hover {
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   z-index: 5;
@@ -421,8 +439,11 @@ a {
 
 .price {
   position: absolute;
-  margin: 0;
+  margin: 7px 1px;
   top: 205px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -430,6 +451,9 @@ a {
   margin-top: 0;
   margin-bottom: 25px;
   font-size: 16px;
+  font-weight: 500;
+  max-width: 257px;
+  margin: 1px 7px 25px;
 }
 
 .quick-view {
@@ -443,7 +467,8 @@ a {
   justify-content: flex-start;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
+  margin: 18px 0 0;
+  font-size: 14px;
 }
 
 .breadcrumbs li {
@@ -466,7 +491,8 @@ a {
 
 .button {
   display: inline-block;
-  font-weight: 600;
+  vertical-align: initial;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -482,7 +508,7 @@ a {
 
 .promo-item .button {
   position: absolute;
-  bottom: 20px;
+  bottom: 25px;
   right: 20px;
   padding: 9px 23px;
 }
@@ -515,7 +541,9 @@ a {
 
 .user-button {
   display: inline-block;
-  background-color: rgb(255, 255, 255, 0.2);
+  vertical-align: initial;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.2);
   color: #ffffff;
   text-align: center;
   border: none;
@@ -566,7 +594,7 @@ a {
 
 .carousel-list {
   margin: 0;
-  margin-top: -85px;
+  margin-top: -48px;
   padding: 0;
   list-style: none;
 }
@@ -589,6 +617,7 @@ a {
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: initial;
   width: 17px;
   height: 17px;
   margin-right: 8px;
@@ -601,7 +630,7 @@ a {
 
 .slider-controls {
   position: absolute;
-  bottom: 17px;
+  bottom: 20px;
   left: 0;
   z-index: 20;
 
@@ -857,6 +886,7 @@ a {
 
 .cart-item-name {
   display: inline-block;
+  vertical-align: initial;
   width: 217px;
   vertical-align: top;
 }
@@ -1045,7 +1075,7 @@ a {
 .social-list {
   display: flex;
   justify-content: space-between;
-  min-width: 200px;
+  min-width: 182px;
   margin: 0;
   padding: 0;
 }
@@ -1093,7 +1123,7 @@ a {
   background-position: top left;
   background-repeat: no-repeat;
   width: 477px;
-  padding: 9px 37px 5px 52px;
+  padding: 12px 32px 3px 56px;
 }
 
 .advantage-item:nth-child(1) {
@@ -1113,7 +1143,7 @@ a {
 }
 
 .more-info a,
-.footer-copyright-container a,
+.academy-link,
 .breadcrumbs a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   text-align: left;
@@ -1121,7 +1151,11 @@ a {
 
 .main-footer {
   align-items: center;
-  padding: 10px 30px;
+  padding: 11px 27px 22px;
+}
+
+.more-info a {
+  margin-bottom: 4px;
 }
 
 .review::placeholder {
@@ -1138,7 +1172,7 @@ a {
   font-size: 14px;
   line-height: 20px;
   min-height: 305px;
-  padding: 30px 25px;
+  padding: 27px 25px;
   background-color: #ffffff;
   color: #323232;
   border-radius: 20px;
@@ -1146,9 +1180,14 @@ a {
   z-index: 2;
 }
 
+.company-address-name.order-text {
+  width: 176px;
+  margin: -1px 0 5px;
+}
 
 .company-address {
   display: inline-block;
+  vertical-align: initial;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 20px;
@@ -1167,8 +1206,8 @@ a {
 
 .feedback-button {
   display: block;
-  padding: 9px 25px;
-  margin: 26px auto 0;
+  padding: 9px 27px;
+  margin: 25px auto 0;
 }
 
 .company-phone {
@@ -1269,6 +1308,7 @@ a {
 .checkbox-indicator {
   position: absolute;
   display: inline-block;
+  vertical-align: initial;
   width: 24px;
   height: 20px;
   left: 0;
@@ -1286,7 +1326,7 @@ a {
   opacity: 1;
 }
 
-..checkbox-indicator:disabled,
+.checkbox-indicator:disabled,
 .fat-content-radio:disabled {
   opacity: 0.4;
 }
@@ -1314,15 +1354,16 @@ a {
   min-height: 37px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  padding: 7px 13px;
+  padding: 0px 22px;
   align-items: center;
   box-sizing: border-box;
 }
 
-.filers-label {
-  margin: 10px 0 5px 15px;
+.filters-label {
+  margin: 13px 0 5px 15px;
   font-size: 14px;
   line-height: 16px;
+  text-align: left;
 }
 
 .filters {
@@ -1343,6 +1384,7 @@ a {
 
 .filters-button {
   display: inline-block;
+  vertical-align: initial;
   height: 37px;
   font-weight: 500;
   font-size: 16px;
@@ -1376,9 +1418,10 @@ a {
 .fat-content-radio {
   position: relative;
   display: inline-block;
+  vertical-align: initial;
   width: 22px;
   height: 22px;
-  margin-right: 10px;
+  margin-right: 14px;
   vertical-align: top;
   border: 3px solid #ffffff;
   border-radius: 50%;
@@ -1389,8 +1432,12 @@ a {
 
 .radio-item {
   position: relative;
-  margin-right: 15px;
+  margin-right: 10px;
   cursor: pointer;
+}
+
+.radio-item:last-child {
+  margin-right: 0;
 }
 
 .radio-trigger:checked ~ .fat-content-radio:after {
@@ -1410,10 +1457,24 @@ a {
 
 .select-filter {
   color: #ffffff;
+  font-weight: 500;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   background: 150px 13px url(../img/icons/icon-down-dir.svg) no-repeat;
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
+  padding: 10px 34px 10px 15px;
+  background-position: 168px 15px;
+}
+
+.select-filter:hover {
+  color: #323232;
+  background: 150px 13px url(../img/icons/black-dir.svg) no-repeat;
+  background-position: 168px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .filter-track {
@@ -1425,7 +1486,7 @@ a {
 
 .filter-bar {
   position: absolute;
-  left: 30px;
+  left: 20px;
   width: 107px;
   height: 4px;
   background-color: #f8f7f4;
@@ -1434,7 +1495,7 @@ a {
 
 .left-handle {
   position: absolute;
-  left: -15px;
+  left: -6px;
   top: -8px;
   background-color: rgb(171, 171, 171);
   width: 4px;
@@ -1454,4 +1515,91 @@ a {
   border: 8px solid #ffffff;
   border-radius: 100%;
   cursor: pointer;
+}
+
+.footer-container {
+  padding: 0;
+}
+
+.footer-social {
+  margin: 14px 2px 0px;
+}
+
+.logo-img-wrapper {
+  margin-left: -4px;
+  margin-right: 4px;
+}
+
+.catalog-header {
+  padding-bottom: 0;
+}
+
+.page-title {
+  margin: 0 0 15px;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.fat-filter-container {
+  padding: 0 14px;
+}
+
+.fill-container {
+  padding: 0 6px;
+}
+
+.pages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  margin-top: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.pages-list {
+  display: flex;
+  padding: 0 17px;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.grid-section-container-catalog {
+  padding-bottom: 0;
+}
+
+.pages-container {
+  display: flex;
+  justify-content: space-between;
+  width: 191px;
+  align-items: center;
+}
+
+.previous-page {
+  transform: rotate(180deg);
+}
+
+.active-page-number {
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
+.active-page-number a {
+  color: #323232;
+}
+
+.page:not(.active-page-number):hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+.page {
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+}
+a.quick-view.link-hover.button:hover {
+    color: #ffffff;
 }
