@@ -1613,6 +1613,7 @@ a {
 
 .previous-page {
   transform: rotate(180deg);
+  cursor: default;
 }
 
 .active-page-number {
