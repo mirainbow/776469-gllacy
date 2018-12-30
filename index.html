@@ -6,7 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/main-style-min.css">
 </head>
 
 <body>
@@ -57,7 +57,7 @@
           <div class="user-actions-container">
             <ul class="user-actions">
               <li class="search-line-button site-navigation-hover user-actions-item drop-trigger">
-                <button class="search-button user-button site-navigation-hover"></button>
+                <button class="search-button user-button site-navigation-hover" aria-label="Кнопка поиска"></button>
                 <div class="search-form-container drop-menu">
                   <form class="search-form user-form" action="https://echo.htmlacademy.ru" method="post">
                     <label class="visually-hidden" for="search-line">Поиск</label>
@@ -84,7 +84,7 @@
                 </div>
               </li>
               <li class="user-actions-item site-navigation-hover drop-trigger">
-                <button class="cart-button  user-button">Пусто</button>
+                <button class="cart-button user-button" aria-label="Корзина пуста">Пусто</button>
               </li>
             </ul>
           </div>
@@ -108,7 +108,8 @@
             </div>
             <ul class="carousel-list">
               <li class="slider-item slide" id="slide1">
-                <h3 class="slider-title">Крем-брюле и пломбир с малиновым джемом</h3>
+                <h3 class="slider-title">Крем-брюле и пломбир с малиновым джемом
+                </h3>
                 <a class="button slide-button" href="#">Давайте оба!</a>
               </li>
               <li class="slider-item slide" id="slide2">
@@ -118,7 +119,7 @@
               </li>
               <li class="slider-item slide" id="slide3">
                 <h3 class="slider-title">Пломбир с помадкой
-                  и клубничный щербет</h3>
+                  и клубничный щербет </h3>
                 <a class="button slide-button" href="#">Давайте оба!</a>
               </li>
             </ul>
@@ -128,7 +129,8 @@
           <div class="flex-container ">
             <div class="promo-item raspberries half-width">
               <h3 class="promo-item-name">Малинка даром!</h3>
-              <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+              <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+              </p>
               <a class="button" href="#">Хочу варенье!</a>
             </div>
             <div class="promo-item chocolate half-width">
@@ -201,12 +203,12 @@
             </li>
             <li class="advantage-item">
               <p class="advantage-item-text">
-                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+                Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
               </p>
             </li>
             <li class="advantage-item">
               <p class="advantage-item-text">
-                Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
               </p>
             </li>
             <li class="advantage-item">
@@ -271,7 +273,8 @@
         <a href="feedbackhtml" class="button feedback-button js-feedback-button">Форма обратной связи</a>
       </div>
     </div>
-    <img class="map-img" src="img/mapwithpin.png" width="1200px" height="430px" alt=" Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716136502!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1546163994536" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen aria-label=" Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+    <img class="map-img" src="img/mapwithpin.png" width="1200" height="430" alt=" Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург">
   </section>
   <div class="site-wrapper">
     <div class="site-container footer-container">
@@ -325,7 +328,7 @@
       </footer>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="js/script-min.js"></script>
 </body>
 
 </html>

@@ -56,9 +56,13 @@ a {
   color: #ffffff;
 }
 
+.main-header-right {
+  position: relative;
+}
+
 .contact-info {
   position: absolute;
-  right: 26px;
+  right: 0;
   font-weight: bold;
   text-align: right;
 
@@ -77,6 +81,11 @@ a {
   margin: 0;
 }
 
+.half-width {
+  padding: 20px;
+  width: 560px;
+}
+
 .promo-item {
   width: 560px;
   min-height: 229px;
@@ -87,6 +96,7 @@ a {
   border-radius: 15px;
   position: relative;
   background-size: cover;
+  padding-bottom: 60px;
 }
 
 .promo-item-name {
@@ -105,12 +115,14 @@ a {
   /*  указать потом фоновый цвет(фотошоп кончился)*/
   background-image: url(../img/raspberries.jpg);
   background-repeat: no-repeat;
+  background-color: rgb(133, 8, 43);
 }
 
 .chocolate {
   /*  указать потом фоновый цвет(фотошоп кончился)*/
   background-image: url(../img/chocolate.jpg);
   background-repeat: no-repeat;
+  background-color: rgb(98, 61, 45);
 }
 
 .catalog-list h3 {
@@ -127,17 +139,18 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-align: left;
+  letter-spacing: 0.1px;
 
 }
 
 .advantages {
   width: 1146px;
-  height: 306px;
-  padding: 25px 21px;
+  padding: 25px 20px 14px;
   text-align: left;
   color: #323232;
   /*  указать потом фоновый цвет(фотошоп кончился)*/
   background-image: url(../img/waffle.jpg);
+  background-color: rgb(238, 227, 202);
   border-radius: 15px;
   box-sizing: border-box;
 
@@ -147,11 +160,6 @@ a {
   border-radius: 15px;
   box-sizing: border-box;
 
-}
-
-.half-width {
-  padding: 20px;
-  width: 560px;
 }
 
 .news {
@@ -189,6 +197,7 @@ a {
   padding: 5px;
   color: #5a5a5a;
   background-image: url(../img/mail-backgound.jpg);
+  background-color: rgb(146, 205, 255);
   background-repeat: no-repeat;
   border-radius: 10px;
   box-sizing: border-box;
@@ -224,7 +233,8 @@ a {
   width: 100%;
   margin: 2px 0 0 -40px;
 }
-.academy-logo-catalog{
+
+.academy-logo-catalog {
   margin: 8px 0 0 -40px;
 }
 
@@ -317,6 +327,8 @@ a {
 .site-navigation {
   display: flex;
   padding: 0;
+  flex-wrap: wrap;
+  max-width: 465px;
 }
 
 .site-navigation-item {
@@ -353,17 +365,15 @@ a {
 
 .advantages-list {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  height: 220px;
   margin-top: 8px;
+  margin-bottom: 0;
   padding: 0;
 
 }
 
 .advantage-item-text {
   margin: 0;
-  /*  background-image: url(../img/)*/
 }
 
 .advantage-item:nth-child(1),
@@ -409,7 +419,8 @@ a {
 
 }
 
-.catalog-item-wrapper:hover {
+.catalog-item-wrapper:hover,
+.catalog-item-wrapper:focus {
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -421,7 +432,8 @@ a {
 
 }
 
-.catalog-item:hover .catalog-item-hover {
+.catalog-item:hover .catalog-item-hover,
+.catalog-item-wrapper:focus .catalog-item-hover {
   display: block;
 }
 
@@ -508,7 +520,7 @@ a {
 
 .promo-item .button {
   position: absolute;
-  bottom: 25px;
+  bottom: 23px;
   right: 20px;
   padding: 9px 23px;
 }
@@ -655,17 +667,19 @@ a {
 
 #btn-1:checked ~ .site-wrapper .site-container-img {
   background-image: url(../img/ice-cream/1layer.png);
+  background-color: #849d8f;
 
 }
 
 #btn-2:checked ~ .site-wrapper .site-container-img {
   background-image: url(../img/ice-cream/2layer.png);
-
+  background-color: #8996a6;
 
 }
 
 #btn-3:checked ~ .site-wrapper .site-container-img {
   background-image: url(../img/ice-cream/3%20layer.png);
+  background-color: #9d8b84;
 
 }
 
@@ -789,6 +803,8 @@ a {
   margin-bottom: 20px;
   border-radius: 5px;
   padding: 15px;
+  color: #323232;
+  font-weight: bold;
 
 }
 
@@ -1006,13 +1022,22 @@ a {
 
 /*стили подсветки формы обратной связи*/
 .feedback-form:hover,
-.review:hover {
+.review:hover,
+.login-mail-password:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
 .feedback-form:active,
-.review:active {
+.review:active,
+.login-mail-password:active {
   border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.login-mail-password::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: normal;
 }
 
 .feedback-form::placeholder,
@@ -1020,7 +1045,6 @@ a {
   font-weight: normal;
   font-size: 16px;
   color: #999999;
-
 }
 
 .review {
@@ -1126,15 +1150,19 @@ a {
   padding: 12px 32px 3px 56px;
 }
 
+.advantage-item:nth-child(2n) {
+  padding-right: 0;
+}
+
 .advantage-item:nth-child(1) {
   background-image: url(../img/icon-icecream.svg);
 }
 
-.advantage-item:nth-child(2) {
+.advantage-item:nth-child(3) {
   background-image: url(../img/eco.svg);
 }
 
-.advantage-item:nth-child(3) {
+.advantage-item:nth-child(2) {
   background-image: url(../img/cow.svg);
 }
 
@@ -1177,7 +1205,13 @@ a {
   color: #323232;
   border-radius: 20px;
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 5;
+}
+
+.map-iframe {
+  position: absolute;
+  top: 0;
+  z-index: 4;
 }
 
 .company-address-name.order-text {
@@ -1600,6 +1634,7 @@ a {
   text-align: center;
   line-height: 26px;
 }
+
 a.quick-view.link-hover.button:hover {
-    color: #ffffff;
+  color: #ffffff;
 }
