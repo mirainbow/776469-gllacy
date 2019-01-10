@@ -22,15 +22,17 @@
           </div>
           <nav class="main-navigation">
             <ul class="site-navigation">
-              <li class="site-navigation-item site-navigation-hover drop-trigger">
-                <a class="main-navigation-link" href="catalog.html">Каталог</a>
+              <li class="drop-trigger main-navigation-link-container" tabindex="0">
+                <a class="main-navigation-link site-navigation-item site-navigation-hover" href="catalog.html" tabindex="0">
+                  <span class="main-navigation-link-content">Каталог</span>
+                </a>
                 <div class="catalog-menu-container drop-menu">
                   <ul class="catalog-menu">
                     <li class="catalog-menu-line bottom-line">
-                      <a class="catalog-menu-item new-in-catalog" href="">Новинки</a>
+                      <a class="catalog-menu-item new-in-catalog" href="" tabindex="0">Новинки</a>
                     </li>
                     <li class="catalog-menu-line">
-                      <a class="catalog-menu-item link-hover-nav" href="">Сливочное</a>
+                      <a class="catalog-menu-item link-hover-nav" href="catalog.html" tabindex="0">Сливочное</a>
                     </li>
                     <li class="catalog-menu-line">
                       <a class="catalog-menu-item link-hover-nav" href="">Щербеты</a>
@@ -45,10 +47,14 @@
                 </div>
               </li>
               <li class="site-navigation-item site-navigation-hover">
-                <a class="main-navigation-link" href="delivery.html">Доставка и оплата</a>
+                <a class="main-navigation-link" href="delivery.html" tabindex="0">
+                  <span class="main-navigation-link-content">Доставка и оплата</span>
+                </a>
               </li>
               <li class="site-navigation-item site-navigation-hover">
-                <a class="main-navigation-link" href="about-company.html">О Компании</a>
+                <a class="main-navigation-link" href="about-company.html" tabindex="0">
+                  <span class="main-navigation-link-content">О Компании</span>
+                </a>
               </li>
             </ul>
           </nav>
@@ -56,8 +62,8 @@
         <div class="main-header-right">
           <div class="user-actions-container">
             <ul class="user-actions">
-              <li class="search-line-button site-navigation-hover user-actions-item drop-trigger">
-                <button class="search-button user-button site-navigation-hover" aria-label="Кнопка поиска"></button>
+              <li class="search-line-button user-actions-item drop-trigger" tabindex="0">
+                <button class="search-button user-button site-navigation-hover" aria-label="Кнопка поиска" tabindex="-1"></button>
                 <div class="search-form-container drop-menu">
                   <form class="search-form user-form" action="https://echo.htmlacademy.ru" method="post">
                     <label class="visually-hidden" for="search-line">Поиск</label>
@@ -65,8 +71,8 @@
                   </form>
                 </div>
               </li>
-              <li class="user-actions-item site-navigation-hover drop-trigger">
-                <button class="login-toggle  user-button">Вход</button>
+              <li class="user-actions-item drop-trigger" tabindex="0">
+                <a class="login-toggle site-navigation-hover user-button" tabindex="-1">Вход</a>
                 <div class="login-container drop-menu">
                   <form class="login-form  user-form" action="https://echo.htmlacademy.ru" method="post">
                     <label class="visually-hidden" for="email">Электронная почта</label>
@@ -76,15 +82,15 @@
                     <div class="login-form-actions">
                       <button class="login-button button" type="submit" aria-label="Войти">Войти</button>
                       <div class="new-password-user">
-                        <a class="forgot-password" href="">Забыли пароль</a>
-                        <a class="registration" href="">Новая регистрация</a>
+                        <a class="forgot-password link-hover" href="">Забыли пароль</a>
+                        <a class="registration " href="">Новая регистрация</a>
                       </div>
                     </div>
                   </form>
                 </div>
               </li>
-              <li class="user-actions-item site-navigation-hover drop-trigger">
-                <button class="cart-button user-button" aria-label="Корзина пуста">Пусто</button>
+              <li class="user-actions-item drop-trigger">
+                <a class="cart-button user-button site-navigation-hover" aria-label="Корзина пуста" tabindex="0">Пусто</a>
               </li>
             </ul>
           </div>
@@ -102,9 +108,9 @@
           <section class="promo-carousel">
 
             <div class="slider-controls">
-              <label for="btn-1">Первый</label>
-              <label for="btn-2">Второй</label>
-              <label for="btn-3">Третий</label>
+              <label for="btn-1" tabindex="0">Первый</label>
+              <label for="btn-2" tabindex="0">Второй</label>
+              <label for="btn-3" tabindex="0">Третий</label>
             </div>
             <ul class="carousel-list">
               <li class="slider-item slide" id="slide1">
@@ -147,47 +153,47 @@
               <div class="catalog-item-wrapper">
                 <div class="catalog-item-container bestseller-product">
                   <img class="ice-cream-catalog" src="img/ice-cream/1-1.jpg" width="267" height="267" alt="картинка сливочного мороженого">
-                  <p class="price">310₽<span class="weight">/кг</span></p>
-                  <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+                  <p class="price">310₽/<span class="weight">кг</span></p>
+                  <a class="ice-cream-name" href="#" tabindex="0">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 </div>
-                <div class="catalog-item-hover">
-                  <a class="quick-view link-hover button" href="#">Быстрый просмотр</a>
+                <div class="catalog-item-hover link-hover">
+                  <a class="quick-view link-hover button" href="#" tabindex="0">Быстрый просмотр</a>
                 </div>
               </div>
             </li>
             <li class="catalog-item">
-              <div class="catalog-item-wrapper">
+              <div class="catalog-item-wrapper" tabindex="0">
                 <div class="catalog-item-container bestseller-product">
                   <img class="ice-cream-catalog" src="img/ice-cream/1-2.jpg" width="267" height="267" alt="картинка сливочного мороженого">
-                  <p class="price">380₽<span class="weight">/кг</span></p>
-                  <h3>Сливочно-кофейное с кусочками шоколада</h3>
+                  <p class="price">380₽/<span class="weight">кг</span></p>
+                  <a class="ice-cream-name" href="#" tabindex="0">Сливочно-кофейное с кусочками шоколада</a>
                 </div>
-                <div class="catalog-item-hover">
-                  <a class="quick-view link-hover button" href="#">Быстрый просмотр</a>
+                <div class="catalog-item-hover link-hover">
+                  <a class="quick-view link-hover button" href="#" tabindex="0">Быстрый просмотр</a>
                 </div>
               </div>
             </li>
             <li class="catalog-item">
-              <div class="catalog-item-wrapper">
+              <div class="catalog-item-wrapper" tabindex="0">
                 <div class="catalog-item-container bestseller-product">
                   <img class="ice-cream-catalog" src="img/ice-cream/1-3.jpg" width="267" height="267" alt="картинка сливочного мороженого">
-                  <p class="price">355₽<span class="weight">/кг</span></p>
-                  <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                  <p class="price">355₽/<span class="weight">кг</span></p>
+                  <a class="ice-cream-name link-hover" tabindex="0">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 </div>
                 <div class="catalog-item-hover">
-                  <a class="quick-view link-hover button" href="#">Быстрый просмотр</a>
+                  <a class="quick-view link-hover button" href="#" tabindex="0">Быстрый просмотр</a>
                 </div>
               </div>
             </li>
             <li class="catalog-item">
-              <div class="catalog-item-wrapper">
+              <div class="catalog-item-wrapper" tabindex="0">
                 <div class="catalog-item-container bestseller-product">
                   <img class="ice-cream-catalog" src="img/ice-cream/1-4.jpg" width="267" height="267" alt="картинка сливочного мороженого">
-                  <p class="price">415₽<span class="weight">/кг</span></p>
-                  <h3>Сливочное крем-брюле с карамельной подливкой</h3>
+                  <p class="price">415₽/<span class="weight">кг</span></p>
+                  <a class="ice-cream-name link-hover" tabindex="0">Сливочное крем-брюле с карамельной подливкой</a>
                 </div>
                 <div class="catalog-item-hover">
-                  <a class="quick-view link-hover button" href="#">Быстрый просмотр</a>
+                  <a class="quick-view link-hover button" href="#" tabindex="0">Быстрый просмотр</a>
                 </div>
               </div>
             </li>
@@ -233,9 +239,9 @@
               <p class="subscription-item">
                 Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </p>
-              <form action="https://echo.htmlacademy.ru" method="post">
+              <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
                 <label for="subscription-mail" class="visually-hidden">Введите почту для подписки</label>
-                <input type="text" id="subscription-mail" class="subscription-mail" placeholder="Электронная почта">
+                <input type="text" id="subscription-mail" class="subscription-mail user-field" placeholder="Электронная почта">
                 <button class="send-mail button" type="submit" aria-label="Отправить электронную почту">Отправить</button>
               </form>
             </div>
@@ -270,10 +276,10 @@
         <p class="company-address-name order-text">Для заказов по телефону:</p>
         <strong class="company-phone">8 812 450-25-25</strong>
         <p class="open-hours">(с 10 до 20 ежедневно)</p>
-        <a href="feedbackhtml" class="button feedback-button js-feedback-button">Форма обратной связи</a>
+        <a href="feedback.html" class="button feedback-button js-feedback-button">Форма обратной связи</a>
       </div>
     </div>
-    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716136502!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1546163994536" width="1200" height="430" style="border:0" allowfullscreen aria-label=" Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+    <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.320858716136502!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1546163994536" height="430" style="border:0" allowfullscreen aria-label=" Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     <img class="map-img" src="img/mapwithpin.png" width="1200" height="430" alt=" Адрес магазина:ул. Большая Конюшенная 19/8, Санкт-Петербург">
   </section>
   <div class="site-wrapper">
